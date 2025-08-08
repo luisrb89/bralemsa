@@ -11,6 +11,7 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -26,7 +27,7 @@ header {
     margin: 0 auto;
 }
 .menu {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 0;
     right: 0;
@@ -75,11 +76,11 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    position: fixed;
     margin: 100px 0px;
 }
 .im-txt {
-    padding: 100px 0px;
+    padding: 55px 0px;
     text-align: center;
     color: #ffffff;
 }
