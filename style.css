@@ -1,0 +1,265 @@
+/* Reset general y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* MODIFICADO: Aumentamos el ancho máximo para que el logo llegue más a la izquierda */
+.container {
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 0 20px;   
+}
+
+/* MODIFICADO: Cambiamos width de 400px a auto para que no ocupe espacio extra a la derecha */
+.logo {
+    height: 70px; 
+    width: auto; 
+    max-width: 250px;
+    padding: 0px;
+    border-radius: 5px;
+    object-fit: contain;
+    background-color: white;
+}
+
+/* Header y Navegación */
+header {
+    background-color: #000;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/descarga.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 5px 10px ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* Empuja el logo a la izq y la navbar a la der */
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: #34e9d0;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #ffffff;
+}
+
+/* Sección Hero (Principal) */
+.im-sec {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/received_2785743864950789.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px; 
+}
+
+.im-txt h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.im-txt p {
+    font-size: 1.2rem;
+    color: #ddd;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Descripción */
+.descripcion {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.descripcion h2 {
+    font-size: 1.5rem;
+    color: #444;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Servicios */
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.group-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Portfolio e Imágenes */
+.portfolio {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #34e9d0;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.imgs img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Sección de Descarga */
+.bg-sec {
+    background: #333;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Números */
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+
+.number h3 {
+    font-size: 4rem;
+    color: #34e9d0;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 50px 0;
+}
+
+.ft {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.enlace h3 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #34e9d0;
+    
+    
+}
+
+.enlace li {
+    margin-bottom: 10px;
+    
+}
+
+.enlace a {
+    color: #ccc;
+   
+}
+
+.enlace a:hover {
+    color: #34e9d0;
+    
+}
+
+/* RESPONSIVE (Ajustes para celulares) */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* MODIFICADO: Logo más pequeño en celular para que no ocupe toda la pantalla */
+    .logo {
+        height: 50px; 
+        max-width: 250px;
+    }
+    
+    .im-txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .number h3 {
+        font-size: 3rem;
+    }
+
+    .ft {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
